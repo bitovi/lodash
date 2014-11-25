@@ -1,0 +1,13 @@
+{
+	"sites": {
+		"docs": {
+			"glob": "lodash.js",
+			"dest": "./docs",
+			"parent": "_",
+			"tags": "doc/tags",
+			"templates": "doc/templates",
+			"static": "doc/static",
+			"singlePage": true
+		}
+	}
+}

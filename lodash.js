@@ -4917,9 +4917,9 @@
     }
 
     /**
+     * @function _.prototype.chain
      * Enables explicit method chaining on the wrapper object.
      *
-     * @name chain
      * @memberOf _
      * @category Chain
      * @returns {*} Returns the `lodash` object.
@@ -4946,12 +4946,13 @@
     }
 
     /**
+     * @function _.prototype.reverse
+     * 
      * Reverses the wrapped array so the first element becomes the last, the
      * second element becomes the second to last, and so on.
      *
      * **Note:** This method mutates the wrapped array.
      *
-     * @name chain
      * @memberOf _
      * @category Chain
      * @returns {Object} Returns the new reversed `lodash` object.
@@ -4976,9 +4977,10 @@
     }
 
     /**
+     * @function _.prototype.toString
+     * 
      * Produces the result of coercing the unwrapped value to a string.
      *
-     * @name toString
      * @memberOf _
      * @category Chain
      * @returns {string} Returns the coerced string value.
@@ -4992,11 +4994,12 @@
     }
 
     /**
+     * @function _.prototype.valueOf
+     * 
      * Extracts the unwrapped value from its wrapper.
      *
-     * @name valueOf
      * @memberOf _
-     * @alias toJSON, value
+     * @alias _.prototype.toJSON, _.prototype.value
      * @category Chain
      * @returns {*} Returns the unwrapped value.
      * @example

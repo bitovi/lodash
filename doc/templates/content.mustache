@@ -1,0 +1,37 @@
+{{#eachCategory}}
+	<div>
+		<h2>
+			{{#ifEqual name "Properties"}}
+				<code>Properties</code>
+			{{else}}
+				<code>“{{name}}” Methods</code>
+			{{/ifEqual}}
+		</h2>
+		{{#eachDocObject name}}
+			<div>
+				<h3>
+					<a id="{{makeId}}"> </a>
+					<code class="prettyprint">{{#ifEqual type "property"}}{{name}}{{else}}{{{makeSignature code}}}{{/ifEqual}}</code>
+				</h3>
+				<p>
+					<a href="#{{makeId}}">#</a>
+					<a href="https://github.com/lodash/lodash/blob/master/lodash.js#L{{codeLine}}" title="View in source">Ⓢ</a>
+				</p>
+				{{#ifEqual type "property"}}
+					<div class="returns">
+						<em>{{{makeTypesString types}}}</em>
+						{{{makeLinks description}}}
+					</div>
+				{{else}}
+					{{{makeLinks description}}}
+				{{/ifEqual}}
+				
+				{{> signature.mustache}}
+				{{#if body}}
+				<h4>Example</h4>
+				{{{makeLinks body}}}
+				{{/if}}
+			</div>
+		{{/eachDocObject}} 
+	</div>
+{{/eachCategory}}

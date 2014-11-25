@@ -61,5 +61,8 @@
       "test",
       "vendor"
     ]
+  },
+  "devDependencies": {
+    "documentjs": "git://github.com/bitovi/documentjs#lodash-updates"
   }
 }
